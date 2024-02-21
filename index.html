@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="calc">
-        <form name="form">
-            <input type="text" name="show" class="container" readonly>
-            <input type="button" value="7" onclick="document.forms.show.value='7'"  class="btn_num btn">
-            <input type="button" value="8" class="btn_num btn">
-            <input type="button" value="9" class="btn_num btn">
-            <input type="button" value="+" class="btn_operator btn">
-            <input type="button" value="4" class="btn_num btn">
-            <input type="button" value="5" class="btn_num btn">
-            <input type="button" value="6" class="btn_num btn">
-            <input type="button" value="-" class="btn_operator btn">
-            <input type="button" value="1" class="btn_num btn">
-            <input type="button" value="2" class="btn_num btn">
-            <input type="button" value="3" class="btn_num btn">
-            <input type="button" value="/" class="btn_operator btn">
-            <input type="button" value="AC" class="btn_clear btn">
-            <input type="button" value="0" class="btn_num btn">
-            <input type="button" value="=" class="btn_equal btn">
-            <input type="button" value="*" class="btn_operator btn">
+    <section class="calculator">
+        <form>
+            <input type="text" class="screen">
         </form>
-    </div>
+
+        <div class="buttons">
+            <button type="button" class="btn btn_yellow" data-num="*">*</button>
+            <button type="button" class="btn btn_yellow" data-num="/">/</button>
+            <button type="button" class="btn btn_yellow" data-num="-">-</button>
+            <button type="button" class="btn btn_yellow" data-num="+">+</button>
+
+
+            <button type="button" class="btn btn_grey" data-num="9">9</button>
+            <button type="button" class="btn btn_grey" data-num="8">8</button>
+            <button type="button" class="btn btn_grey" data-num="7">7</button>
+            <button type="button" class="btn btn_grey" data-num="6">6</button>
+            <button type="button" class="btn btn_grey" data-num="5">5</button>
+            <button type="button" class="btn btn_grey" data-num="4">4</button>
+            <button type="button" class="btn btn_grey" data-num="3">3</button>
+            <button type="button" class="btn btn_grey" data-num="2">2</button>
+            <button type="button" class="btn btn_grey" data-num="1">1</button>
+            <button type="button" class="btn btn_grey" data-num="0">0</button>
+            <button type="button" class="btn btn_grey" data-num=".">.</button>
+
+
+            <button type="button" class="btn_equal">=</button>
+            <button type="button" class="btn_clear">C</button>
+           
+          
+        </div>
+    </section>
     <script src="./js/common.js"></script>
 </body>
 </html>
